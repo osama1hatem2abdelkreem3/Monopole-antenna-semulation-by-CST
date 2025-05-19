@@ -26,8 +26,8 @@
 
 - [2. Design Methodology](#2-design-methodology)  
   - [2.1 Antenna Type](https://github.com/osama1hatem2abdelkreem3/Monopole-antenna-semulation-by-CST/blob/main/Monopole%20Antenna%20Simulation.md#antenna-type)
-  - [2.2 Operating Frequency and Wavelength Calculation](#operating-frequency-and-wavelength-calculation)  
-  - [2.3 Ground Plane Design](#ground-plane-design)  
+  - [2.2 Operating Frequency and Wavelength Calculation](https://github.com/osama1hatem2abdelkreem3/Monopole-antenna-semulation-by-CST/blob/main/Monopole%20Antenna%20Simulation.md#operating-frequency-and-wavelength-calculation)  
+  - [2.3 Ground Plane Design](https://github.com/osama1hatem2abdelkreem3/Monopole-antenna-semulation-by-CST/blob/main/Monopole%20Antenna%20Simulation.md#ground-plane-design)  
   - [2.4 Monopole Geometry](#monopole-geometry)  
   - [2.5 Feeding Mechanism](#feeding-mechanism)  
   - [2.6 Simulation Settings](#simulation-settings)  
@@ -173,30 +173,21 @@ This large ground plane size was chosen to approximate an infinite ground and en
         
 - ![](image/1.jpg)  - ![](image/2.jpg)
         
-  ### **Monopole Geometry**
-    
-    - **Monopole Geometry**
+### **Monopole Geometry**
+  - **Monopole Geometry**
 		The monopole was also modeled as a $PEC$ cylinder with the following parameters:
-
 		**Height $(Zmax)$:** L (to be optimized around $37.5 mm$)
-
 		**Radius:** R (typically small, e.g., $1-2 mm$)
-
 		Position: Centered at $(X = 0, Y = 0)$ and extending from $Z = 0 to Z = L$
-
 		Material: $PEC$
-
 		Orientation: $Z-axis$
-
-		These values were fine-tuned through simulation to ensure the antenna resonates precisely at $2 GHz$
-        
+		These values were fine-tuned through simulation to ensure the antenna resonates precisely at $2 GHz$ 
     - ![](image/3.jpg) 
     - ![](image/4.jpg)
         
 
-	### **Feeding Mechanism**
-    
-    - The antenna was excited using a Discrete Edge Port, which is a simplified feeding method suitable for simulating the excitation between two metal parts without modeling a full coaxial feed structure.
+### **Feeding Mechanism**
+- The antenna was excited using a Discrete Edge Port, which is a simplified feeding method suitable for simulating the excitation between two metal parts without modeling a full coaxial feed structure.
 		
         
     - Port Type: S-Parameter:

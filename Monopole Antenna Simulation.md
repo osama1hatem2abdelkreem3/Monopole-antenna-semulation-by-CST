@@ -25,12 +25,12 @@
   - [1.9 Disadvantages](#disadvantages)  
 
 - [2. Design Methodology](#2-design-methodology)  
-  - [2.1 Antenna Type](#1-antenna-type)  
-  - [2.2 Operating Frequency and Wavelength Calculation](#2-operating-frequency-and-wavelength-calculation)  
-  - [2.3 Ground Plane Design](#3-ground-plane-design)  
-  - [2.4 Monopole Geometry](#4-monopole-geometry)  
-  - [2.5 Feeding Mechanism](#5-feeding-mechanism)  
-  - [2.6 Simulation Settings](#6-simulation-settings)  
+  - [2.1 Antenna Type](#antenna-type)  
+  - [2.2 Operating Frequency and Wavelength Calculation](#operating-frequency-and-wavelength-calculation)  
+  - [2.3 Ground Plane Design](#ground-plane-design)  
+  - [2.4 Monopole Geometry](#monopole-geometry)  
+  - [2.5 Feeding Mechanism](#feeding-mechanism)  
+  - [2.6 Simulation Settings](#simulation-settings)  
 
 - [3. Simulation Setup and Results](#3-simulation-setup-and-results)  
   - [3.1 Simulation Results](#simulation-results)  

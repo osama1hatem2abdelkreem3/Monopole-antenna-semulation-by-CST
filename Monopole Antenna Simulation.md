@@ -25,7 +25,7 @@
   - [1.9 Disadvantages](#disadvantages)  
 
 - [2. Design Methodology](#2-design-methodology)  
-  - [2.1 Antenna Type]([#antenna-type](https://github.com/osama1hatem2abdelkreem3/Monopole-antenna-semulation-by-CST/blob/main/Monopole%20Antenna%20Simulation.md#antenna-type))  
+  - [2.1 Antenna Type](https://github.com/osama1hatem2abdelkreem3/Monopole-antenna-semulation-by-CST/blob/main/Monopole%20Antenna%20Simulation.md#antenna-type)
   - [2.2 Operating Frequency and Wavelength Calculation](#operating-frequency-and-wavelength-calculation)  
   - [2.3 Ground Plane Design](#ground-plane-design)  
   - [2.4 Monopole Geometry](#monopole-geometry)  

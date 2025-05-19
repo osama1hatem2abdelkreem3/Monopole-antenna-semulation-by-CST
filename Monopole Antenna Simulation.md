@@ -25,12 +25,12 @@
   - [1.9 Disadvantages](#disadvantages)  
 
 - [2. Design Methodology](#2-design-methodology)  
-  - [2.1 Antenna Type](#21-antenna-type)  
-  - [2.2 Operating Frequency and Wavelength Calculation](#22-operating-frequency-and-wavelength-calculation)  
-  - [2.3 Ground Plane Design](#23-ground-plane-design)  
-  - [2.4 Monopole Geometry](#24-monopole-geometry)  
-  - [2.5 Feeding Mechanism](#25-feeding-mechanism)  
-  - [2.6 Simulation Settings](#26-simulation-settings)  
+  - [2.1 Antenna Type](#2-1-antenna-type)  
+  - [2.2 Operating Frequency and Wavelength Calculation](#2-2-operating-frequency-and-wavelength-calculation)  
+  - [2.3 Ground Plane Design](#2-3-ground-plane-design)  
+  - [2.4 Monopole Geometry](#2-4-monopole-geometry)  
+  - [2.5 Feeding Mechanism](#2-5-feeding-mechanism)  
+  - [2.6 Simulation Settings](#2-6-simulation-settings)  
 
 - [3. Simulation Setup and Results](#3-simulation-setup-and-results)  
   - [3.1 Simulation Results](#simulation-results)  
@@ -146,7 +146,7 @@ The design process was carried out to implement a monopole antenna resonating at
     
     - A cylindrical monopole antenna was chosen due to its simple geometry, omnidirectional radiation pattern in the horizontal plane, and ease of fabrication. The monopole was modeled as a quarter-wavelength vertical conductor mounted on a large circular ground plane.
         
-        - ![Monopole CAD](antennatypePlaceholder.jpeg)
+        - ![Monopole CAD](image/antennatypePlaceholder.jpeg)
 
         
 2. ### **Operating Frequency and Wavelength Calculation**
@@ -172,8 +172,8 @@ The design process was carried out to implement a monopole antenna resonating at
 
 		This large ground plane size was chosen to approximate an infinite ground and ensure a proper reflection plane for the monopole radiation.
         
-    - ![](1.jpg)
-    - ![](2.jpg)
+    - ![](image/1.jpg)
+    - ![](image/2.jpg)
         
 4. ### **Monopole Geometry**
     
@@ -192,8 +192,8 @@ The design process was carried out to implement a monopole antenna resonating at
 
 		These values were fine-tuned through simulation to ensure the antenna resonates precisely at $2 GHz$
         
-    - ![](3.jpg) 
-    - ![](4.jpg)
+    - ![](image/3.jpg) 
+    - ![](image/4.jpg)
         
 
 
@@ -214,7 +214,7 @@ The design process was carried out to implement a monopole antenna resonating at
 	- This setup allows current to flow directly from the monopole into the ground plane, effectively mimicking the function of a feed point without needing to simulate a detailed connector structure. The edge port helps monitor the voltage, current, and S-parameters of the antenna efficiently.
 
         
-    - ![](5.jpg)
+    - ![](image/5.jpg)
 
 
 6. ### **Simulation Settings**
@@ -244,25 +244,25 @@ The design process was carried out to implement a monopole antenna resonating at
 
 	**Resonant Frequency:** The antenna resonates at approximately $1.992 GHz.$
 	
-	![S11](S11.jpg)
+	![S11](image/S11.jpg)
 	
 	
 - **−$10 dB S₁₁$ Bandwidth** :  The antenna’s return‑loss curve crosses −$10 dB$ at about $1.796 GHz$ and $2.171 GHz$, giving a usable bandwidth of ≈ $375 MHz$ (fractional $BW$ ≈ $18.7$%).
   
 	 **Center Frequency:**  The midpoint of that band is ≈ $1.992 GHz$, nearly coincident with the design frequency of $2 GHz$
- ![Bandwidth](Bandwidth.jpg)
+ ![Bandwidth](image/Bandwidth.jpg)
  
     
 - **Minimum $VSWR$:** The observed $VSWR$ is $1.12$, indicating an excellent impedance match. This corresponds to a return loss of about –$25 dB$, implying minimal reflection and high power transfer
   
-  ![VSWR](VSWR.jpg)
+  ![VSWR](image/VSWR.jpg)
     
 - **3D Directivity Pattern**
 	The $3D$ radiation pattern exhibits the typical hemispherical profile of a monopole antenna, with maximum radiation occurring in the plane perpendicular to the monopole (horizontal plane).
 	
 	**Peak Directivity**: Approximately 3 , consistent with theoretical expectations for a quarter-wave monopole above a ground plane
 
-	![Radiation pattern and directivity](Radiation%20pattern%20and%20directivity.jpg)
+	![Radiation pattern and directivity](image/Radiation%20pattern%20and%20directivity.jpg)
 
 - $2D$ Radiation Cuts
 	$E_Plane$ $(ϕ = 90°)$:
@@ -270,27 +270,27 @@ The design process was carried out to implement a monopole antenna resonating at
 	$3 dB$ Beamwidth: Approximately $41°$
 	Side-lobe level: Around –$7 dB$, indicating good directivity with moderate side energy
 	
-	![$2D Radiation cults$](2D%20Radiation%20Cuts.jpg)
+	![$2D Radiation cults$](image/2D%20Radiation%20Cuts.jpg)
 - H-Plane $(θ = 90°)$:
 	Exhibits a nearly omnidirectional pattern with minor ripple variations
 	$3 dB$ $Beamwidth$: Approximately $360°$
 	
-	![Hplane](Hplame.jpg)
+	![Hplane](image/Hplame.jpg)
 - Peak Gain: The $3D$ gain plot shows a maximum of $2.98(4.74 dbi)$ at $2 GHz$, essentially matching the directivity $2.992 (4.765 dbi)$ since losses are minimal.
 	**Gain Pattern:** The radiation shape remains hemispherical, so this peak occurs broadside to the monopole.
 	
-	![Gain](Gain.jpg)
+	![Gain](image/Gain.jpg)
 - Radiation Efficiency: Nearly $99.6$% at $2 GH$ $(−0.015 dB)$, tapering to about −$1.23 dB$ ($≈75$%) at $1 GHz$. This confirms conductor and dielectric losses are negligible at resonance
   
-  ![radiational efficiency](radiation%20efficiency.jpg)
+  ![radiational efficiency](image/radiation%20efficiency.jpg)
 - **Total Efficiency**: Combining mismatch and radiation losses, total efficiency is –$0.03 dB$ (≈$99$%) at$2 GHz$; it drops to about –$14 dB$ ($≈4$%) at $1 GHz$ when mismatch dominates.
   
-  ![total effeiciency](total%20efficiency.jpg)
+  ![total effeiciency](image/total%20efficiency.jpg)
   
   
 # 4. Analysis and Discussion
 
-![](compair.jpg)
+![](image/compair.jpg)
 
 # 5. Conclusion
 

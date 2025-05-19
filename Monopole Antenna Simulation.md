@@ -125,46 +125,46 @@ When an alternating current $(AC)$ is applied to the monopole, an electromagneti
 
 ### Advantages
 
-• **Smaller Size:** Monopole antennas are typically smaller than dipole antennas.
-• **Simpler Construction:** They are relatively simple to design and construct.
-• **Versatile:** They can be used in a variety of applications. 
+- **Smaller Size:** Monopole antennas are typically smaller than dipole antennas.
+- **Simpler Construction:** They are relatively simple to design and construct.
+- **Versatile:** They can be used in a variety of applications. 
 
 
 ### Disadvantages:
 
 
-• **Ground Plane Dependency:** They require a conductive ground plane for proper operation.
-• **Non-Symmetric Radiation Pattern:** The radiation pattern is not vertically symmetric due to the ground plane.
-• **Ground Plane Size and Orientation:** The size and orientation of the ground plane can affect the radiation pattern.
+- **Ground Plane Dependency:** They require a conductive ground plane for proper operation.
+- **Non-Symmetric Radiation Pattern:** The radiation pattern is not vertically symmetric due to the ground plane.
+- **Ground Plane Size and Orientation:** The size and orientation of the ground plane can affect the radiation pattern.
 
 ___
 # 2. Design Methodology
 
-The design process was carried out to implement a monopole antenna resonating at **2 GHz** using CST Studio Suite. The following steps summarize the methodology used
+The design process was carried out to implement a monopole antenna resonating at **$2 GHz$** using CST Studio Suite. The following steps summarize the methodology used
 
-1. ### **Antenna Type**
+- ### **Antenna Type**
     
     - A cylindrical monopole antenna was chosen due to its simple geometry, omnidirectional radiation pattern in the horizontal plane, and ease of fabrication. The monopole was modeled as a quarter-wavelength vertical conductor mounted on a large circular ground plane.
         
         - ![Monopole CAD](image/antennatypePlaceholder.jpeg)
 
         
-2. ### **Operating Frequency and Wavelength Calculation**
+- ### **Operating Frequency and Wavelength Calculation**
     
     - **Operating Frequency and Wavelength Calculation**
-		The antenna was designed to operate at a resonant frequency of 2 GHz. The corresponding wavelength in free space is:
-	     $λ = c / f = 3 x 10⁸ / 2 x 10⁹ = 150 mm$ 
-        Since the monopole length is typically λ/4, the expected physical height of the monopole should be around:
-	    $L ≈ λ/4 = 37.5 mm$
-		    This value was used as a starting point in the design and we tune it to achieve best results.
+	- The antenna was designed to operate at a resonant frequency of $2 GHz$ . The corresponding wavelength in free space is:
+	  $λ = c / f = 3 x 10⁸ / 2 x 10⁹ = 150 mm$ 
+        - Since the monopole length is typically $λ/4$ , the expected physical height of the monopole should be around:
+	  $L ≈ λ/4 = 37.5 mm$
+This value was used as a starting point in the design and we tune it to achieve best results.
         
-3. ### **Ground Plane Design**
+- ### **Ground Plane Design**
     
     - A circular ground plane was modeled using a $PEC$ cylinder with the following specifications (as seen in the CST dialog box):
 
 		Outer Radius: $190 mm$
 
-		Thickness $(Z-direction)$: $1.6 mm$ $(from Z = –1.8 mm to Z = –0.2 mm)$
+		Thickness $(Z-direction)$ : $1.6 mm$ $(from Z = -1.8 mm to Z = -0.2 mm)$
 
 		Material: Perfect Electric Conductor $(PEC)$
 
@@ -175,14 +175,14 @@ The design process was carried out to implement a monopole antenna resonating at
     - ![](image/1.jpg)
     - ![](image/2.jpg)
         
-4. ### **Monopole Geometry**
+- ### **Monopole Geometry**
     
     - **Monopole Geometry**
 		The monopole was also modeled as a $PEC$ cylinder with the following parameters:
 
 		**Height $(Zmax)$:** L (to be optimized around $37.5 mm$)
 
-		**Radius:** R (typically small, e.g., $1–2 mm$)
+		**Radius:** R (typically small, e.g., $1-2 mm$)
 
 		Position: Centered at $(X = 0, Y = 0)$ and extending from $Z = 0 to Z = L$
 
@@ -197,19 +197,19 @@ The design process was carried out to implement a monopole antenna resonating at
         
 
 
-5. ### **Feeding Mechanism**
+- ### **Feeding Mechanism**
     
     - The antenna was excited using a Discrete Edge Port, which is a simplified feeding method suitable for simulating the excitation between two metal parts without modeling a full coaxial feed structure.
 		
         
     - Port Type: S-Parameter:
-      Impedance: 36.5 Ohms (This value can be chosen based on the input impedance expected at resonance, or based on matching considerations from literature or tuning.)
+      Impedance: $36.5$ Ohms (This value can be chosen based on the input impedance expected at resonance, or based on matching considerations from literature or tuning.)
     
 	- Location:
 
-		Start Point $(X1, Y1, Z1): (0, 0, 0)$ :  **Base of the monopole**
+	Start Point $(X1, Y1, Z1): (0, 0, 0)$ :  **Base of the monopole**
 
-		End Point $(X2, Y2, Z2): (0, 0, –0.2)$ :  **Top surface of the ground plane**
+	End Point $(X2, Y2, Z2):(0, 0,-0.2)$ :  **Top surface of the ground plane**
 		
 	- This setup allows current to flow directly from the monopole into the ground plane, effectively mimicking the function of a feed point without needing to simulate a detailed connector structure. The edge port helps monitor the voltage, current, and S-parameters of the antenna efficiently.
 
@@ -217,7 +217,7 @@ The design process was carried out to implement a monopole antenna resonating at
     - ![](image/5.jpg)
 
 
-6. ### **Simulation Settings**
+- ### **Simulation Settings**
     
         
     - **Frequency range:** $1 GHz to 3 GHz$
@@ -239,21 +239,21 @@ The design process was carried out to implement a monopole antenna resonating at
 
 ###  Simulation Results
 
-- **S-Parameters**: Minimum S11 value: -$25.07 dB$ at $1.992 GHz$ . This is an excellent return loss, indicating that very little power is being reflected back. Most of the power is being delivered to the antenna.
+- **S-Parameters**: Minimum S11 value: $-25.07 dB$ at $1.992 GHz$ . This is an excellent return loss, indicating that very little power is being reflected back. Most of the power is being delivered to the antenna.
 	
 
-	**Resonant Frequency:** The antenna resonates at approximately $1.992 GHz.$
+	**Resonant Frequency:** The antenna resonates at approximately $1.992 GHz$ .
 	
 	![S11](image/S11.jpg)
 	
 	
-- **−$10 dB S₁₁$ Bandwidth** :  The antenna’s return‑loss curve crosses −$10 dB$ at about $1.796 GHz$ and $2.171 GHz$, giving a usable bandwidth of ≈ $375 MHz$ (fractional $BW$ ≈ $18.7$%).
+- **$-10 dB S11 $ Bandwidth** :  The antenna’s return‑loss curve crosses $-10 dB$ at about $1.796 GHz$ and $2.171 GHz$, giving a usable bandwidth of ≈ $375 MHz$ (fractional $BW$ ≈ $18.7$%).
   
 	 **Center Frequency:**  The midpoint of that band is ≈ $1.992 GHz$, nearly coincident with the design frequency of $2 GHz$
  ![Bandwidth](image/Bandwidth.jpg)
  
     
-- **Minimum $VSWR$:** The observed $VSWR$ is $1.12$, indicating an excellent impedance match. This corresponds to a return loss of about –$25 dB$, implying minimal reflection and high power transfer
+- **Minimum $VSWR$:** The observed $VSWR$ is $1.12$, indicating an excellent impedance match. This corresponds to a return loss of about $-25 dB$, implying minimal reflection and high power transfer
   
   ![VSWR](image/VSWR.jpg)
     
@@ -268,7 +268,7 @@ The design process was carried out to implement a monopole antenna resonating at
 	$E_Plane$ $(ϕ = 90°)$:
 	Main lobe direction: Peak at $θ ≈ 50°$
 	$3 dB$ Beamwidth: Approximately $41°$
-	Side-lobe level: Around –$7 dB$, indicating good directivity with moderate side energy
+	Side-lobe level: Around $-7 dB$, indicating good directivity with moderate side energy
 	
 	![$2D Radiation cults$](image/2D%20Radiation%20Cuts.jpg)
 - H-Plane $(θ = 90°)$:
@@ -280,10 +280,10 @@ The design process was carried out to implement a monopole antenna resonating at
 	**Gain Pattern:** The radiation shape remains hemispherical, so this peak occurs broadside to the monopole.
 	
 	![Gain](image/Gain.jpg)
-- Radiation Efficiency: Nearly $99.6$% at $2 GH$ $(−0.015 dB)$, tapering to about −$1.23 dB$ ($≈75$%) at $1 GHz$. This confirms conductor and dielectric losses are negligible at resonance
+- Radiation Efficiency: Nearly $99.6$% at $2 GH$ $(-0.015 dB)$, tapering to about $-1.23 dB$ ($≈75$%) at $1 GHz$. This confirms conductor and dielectric losses are negligible at resonance
   
   ![radiational efficiency](image/radiation%20efficiency.jpg)
-- **Total Efficiency**: Combining mismatch and radiation losses, total efficiency is –$0.03 dB$ (≈$99$%) at$2 GHz$; it drops to about –$14 dB$ ($≈4$%) at $1 GHz$ when mismatch dominates.
+- **Total Efficiency**: Combining mismatch and radiation losses, total efficiency is $-0.03 dB$ (≈$99$%) at$2 GHz$; it drops to about $-14 dB$ ($≈4$%) at $1 GHz$ when mismatch dominates.
   
   ![total effeiciency](image/total%20efficiency.jpg)
   
@@ -297,7 +297,7 @@ The design process was carried out to implement a monopole antenna resonating at
 ### **In this project**
 a quarter-wavelength monopole antenna was designed, modeled, and simulated at a resonance frequency of $2 GHz$ using CST Studio Suite. The simulation results demonstrate that the antenna achieves excellent performance:
 The resonant frequency is accurately centered at $1.992 GHz$, very close to the target $2 GHz$.
-The return loss ($S11$) reaches -$25.07 dB$ at resonance, indicating excellent impedance matching and minimal power reflection.
+The return loss ($S11$) reaches $-25.07 dB$ at resonance, indicating excellent impedance matching and minimal power reflection.
 The $VSWR$ of $~1.11$ confirms highly efficient power transfer.
 The radiation pattern exhibits the expected toroidal shape, with omnidirectional behavior in the azimuthal plane.
 The directivity ($~2.99$ or ~$4.77 dBi$) and radiation efficiency ($>99$%) are in excellent agreement with theoretical values.

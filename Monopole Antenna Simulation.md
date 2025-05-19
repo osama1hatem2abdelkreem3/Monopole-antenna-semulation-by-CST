@@ -14,15 +14,15 @@
 ## Table of Contents
 
 - [1. Introduction and Background](#1-introduction-and-background)  
-  - [1.1 History of Monopole Antenna](#11-history-of-monopole-antenna)  
-  - [1.2 What is a Monopole Antenna?](#12-what-is-a-monopole-antenna)  
-  - [1.3 Operating Principles](#13-operating-principles)  
-  - [1.4 Characteristics](#14-characteristics)  
-  - [1.5 Common Applications](#15-common-applications)  
-  - [1.6 Types of Monopole Antennas](#16-types-of-monopole-antennas)  
-  - [1.7 Design Considerations and Optimization](#17-design-considerations-and-optimization)  
-  - [1.8 Advantages](#18-advantages)  
-  - [1.9 Disadvantages](#19-disadvantages)  
+  - [1.1 History of Monopole Antenna](#history-of-monopole-antenna)  
+  - [1.2 What is a Monopole Antenna?](#what-is-a-monopole-antenna)  
+  - [1.3 Operating Principles](#operating-principles)  
+  - [1.4 Characteristics](#characteristics)  
+  - [1.5 Common Applications](#common-applications)  
+  - [1.6 Types of Monopole Antennas](#types-of-monopole-antennas)  
+  - [1.7 Design Considerations and Optimization](#design-considerations-and-optimization)  
+  - [1.8 Advantages](#advantages)  
+  - [1.9 Disadvantages](#disadvantages)  
 
 - [2. Design Methodology](#2-design-methodology)  
   - [2.1 Antenna Type](#21-antenna-type)  
@@ -33,7 +33,7 @@
   - [2.6 Simulation Settings](#26-simulation-settings)  
 
 - [3. Simulation Setup and Results](#3-simulation-setup-and-results)  
-  - [3.1 Simulation Results](#31-simulation-results)  
+  - [3.1 Simulation Results](#simulation-results)  
     - S-Parameters  
     - −10 dB Bandwidth & Center Frequency  
     - VSWR  

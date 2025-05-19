@@ -25,12 +25,12 @@
   - [1.9 Disadvantages](#disadvantages)  
 
 - [2. Design Methodology](#2-design-methodology)  
-  - [2.1 Antenna Type](-#antenna-type)  
-  - [2.2 Operating Frequency and Wavelength Calculation](-#operating-frequency-and-wavelength-calculation)  
-  - [2.3 Ground Plane Design](-#ground-plane-design)  
-  - [2.4 Monopole Geometry](-#monopole-geometry)  
-  - [2.5 Feeding Mechanism](-#feeding-mechanism)  
-  - [2.6 Simulation Settings](-#simulation-settings)  
+  - [2.1 Antenna Type](#antenna-type)  
+  - [2.2 Operating Frequency and Wavelength Calculation](#operating-frequency-and-wavelength-calculation)  
+  - [2.3 Ground Plane Design](#ground-plane-design)  
+  - [2.4 Monopole Geometry](#monopole-geometry)  
+  - [2.5 Feeding Mechanism](#feeding-mechanism)  
+  - [2.6 Simulation Settings](#simulation-settings)  
 
 - [3. Simulation Setup and Results](#3-simulation-setup-and-results)  
   - [3.1 Simulation Results](#simulation-results)  
@@ -139,43 +139,41 @@ When an alternating current $(AC)$ is applied to the monopole, an electromagneti
 
 ___
 # 2. Design Methodology
-
 The design process was carried out to implement a monopole antenna resonating at **$2 GHz$** using CST Studio Suite. The following steps summarize the methodology used
 
-- ### **Antenna Type**
+### **Antenna Type**
     
-    - A cylindrical monopole antenna was chosen due to its simple geometry, omnidirectional radiation pattern in the horizontal plane, and ease of fabrication. The monopole was modeled as a quarter-wavelength vertical conductor mounted on a large circular ground plane.
+ - A cylindrical monopole antenna was chosen due to its simple geometry, omnidirectional radiation pattern in the horizontal plane, and ease of fabrication. The monopole was modeled as a quarter-wavelength vertical conductor mounted on a large circular ground plane.
         
-        - ![Monopole CAD](image/antennatypePlaceholder.jpeg)
+ - ![Monopole CAD](image/antennatypePlaceholder.jpeg)
 
         
-- ### **Operating Frequency and Wavelength Calculation**
+  ### **Operating Frequency and Wavelength Calculation**
     
-    - **Operating Frequency and Wavelength Calculation**
+ - **Operating Frequency and Wavelength Calculation**
 	- The antenna was designed to operate at a resonant frequency of $2 GHz$ . The corresponding wavelength in free space is:
 	  $λ = c / f = 3 x 10⁸ / 2 x 10⁹ = 150 mm$ 
         - Since the monopole length is typically $λ/4$ , the expected physical height of the monopole should be around:
 	  $L ≈ λ/4 = 37.5 mm$
 This value was used as a starting point in the design and we tune it to achieve best results.
         
-- ### **Ground Plane Design**
+  ### **Ground Plane Design**
     
-    - A circular ground plane was modeled using a $PEC$ cylinder with the following specifications (as seen in the CST dialog box):
+- A circular ground plane was modeled using a $PEC$ cylinder with the following specifications (as seen in the CST dialog box):
 
-		Outer Radius: $190 mm$
+Outer Radius: $190 mm$
 
-		Thickness $(Z-direction)$ : $1.6 mm$ $(from Z = -1.8 mm to Z = -0.2 mm)$
+Thickness $(Z-direction)$ : $1.6 mm$ $(from Z = -1.8 mm to Z = -0.2 mm)$
 
-		Material: Perfect Electric Conductor $(PEC)$
+Material: Perfect Electric Conductor $(PEC)$
 
-		Orientation: Along the Z-axis
+Orientation: Along the Z-axis
 
-		This large ground plane size was chosen to approximate an infinite ground and ensure a proper reflection plane for the monopole radiation.
+This large ground plane size was chosen to approximate an infinite ground and ensure a proper reflection plane for the monopole radiation.
         
-    - ![](image/1.jpg)
-    - ![](image/2.jpg)
+- ![](image/1.jpg)  - ![](image/2.jpg)
         
-- ### **Monopole Geometry**
+  ### **Monopole Geometry**
     
     - **Monopole Geometry**
 		The monopole was also modeled as a $PEC$ cylinder with the following parameters:
@@ -196,8 +194,7 @@ This value was used as a starting point in the design and we tune it to achieve 
     - ![](image/4.jpg)
         
 
-
-- ### **Feeding Mechanism**
+	### **Feeding Mechanism**
     
     - The antenna was excited using a Discrete Edge Port, which is a simplified feeding method suitable for simulating the excitation between two metal parts without modeling a full coaxial feed structure.
 		
@@ -217,7 +214,7 @@ This value was used as a starting point in the design and we tune it to achieve 
     - ![](image/5.jpg)
 
 
-- ### **Simulation Settings**
+  ### **Simulation Settings**
     
         
     - **Frequency range:** $1 GHz to 3 GHz$
